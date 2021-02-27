@@ -26,7 +26,6 @@ effective_sell_dolar_1 = soup.find("td",
                                    text="1 ABD DOLARI")\
     .find_next_sibling()\
     .find_next_sibling()\
-    .find_next_sibling()\
     .find_next_sibling().text\
 
 print(effective_sell_dolar_1)
