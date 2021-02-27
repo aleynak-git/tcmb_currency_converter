@@ -8,8 +8,11 @@ print("merhaba euro")
 from bs4 import *
 import requests
 from tkinter import *
+from tkinter import messagebox
+
+
 # yukarıdaki şekilde import ettiğimizde
-# message eklenemiyor, ayrıca çağırmak lazım
+# messagebox eklenemiyor, ayrıca çağırmak lazım
 
 # gui oluşturuyoruz.
 root = Tk()
@@ -65,7 +68,7 @@ def dolar_çevir():
     tl_miktar = dolar_text.get() * float(effective_sell_dolar_1)
     tl_text.set(tl_miktar)
     print(effective_sell_dolar_1)
-
+    messagebox.showinfo("önemli", "TCMB Efektif Satış fiyatından çevrilmiştir")
 
 # buton ekliyoruz
 
@@ -86,5 +89,6 @@ center_window(280, 150)
 # feature-24: programı gui'li hale getirelim.
 # feature-25: çevirdiği dövizi text dosyasına loglasın.
 # feature-26: çevirdiği dövizi veritabanına kaydetsin.
+# feature-27: efektif diye bir mesaj göstersin.
 
 root.mainloop()
