@@ -25,7 +25,7 @@ dolar_label.grid(row=0, column=0, padx=10, pady=10)
 
 #entry oluşturacağız
 dolar_text = DoubleVar()
-dolar_entry = Entry(root, width=15, textvariable=dolar_text)
+dolar_entry = Entry(root, width=15, textvariable=dolar_text,justify="right")
 dolar_entry.grid(row=0, column=1, sticky=E)
 
 # TL
@@ -38,7 +38,7 @@ tl_label.grid(row=1, column=0, padx=10, pady=(5, 0))
 
 # tl entry
 tl_text = DoubleVar()
-tl_entry = Entry(root, width=15, textvariable=tl_text)
+tl_entry = Entry(root, width=15, textvariable=tl_text, justify="right")
 tl_entry.grid(row=1, column=1, sticky=E)
 
 
